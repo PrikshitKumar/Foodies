@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Foodies</string>
+    <string name="item_home">Home</string>
+    <string name="item_profile">Profile</string>
+    <string name="itme_favorite_restaurants">Favorite Restaurants</string>
+    <string name="item_order_history">Order History</string>
+    <string name="item_faqs">FAQs</string>
+    <string name="item_log_out">Log Out</string>
+    <string name="open_Drawer">Open Drawer</string>
+    <string name="close_Drawer">Close Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sample_username">Prikshit Kumar</string>
+    <string name="sample_phone_number">+91–01112223334</string>
+    <string name="sample_restaurantName">Restaurant Name</string>
+    <string name="sample_perPersonPrice">100 Rs. per Person</string>
+    <string name="sample_rating">4.9</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="signUp">Don\'t have an account? Sign Up now</string>
+    <string name="title_activity_forgot_password">ForgotPassword</string>
+    <string name="txtForgot">Enter your registered mobile number and email id below:</string>
+    <string name="txtReset">Enter the received OTP below:</string>
+    <string name="title_activity_registeration">Registeration</string>
+    <string name="register_yourself">Register Yourself</string>
+
+</resources>

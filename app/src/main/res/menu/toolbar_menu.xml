@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:icon="@drawable/icon_sort"
+        android:title="Sort"
+        android:id="@+id/id_sortMenu"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        />
+    <!-- orderInCategory="100" makes the menu item the 1st menu item on the toolbar from
+     the right
+     showAsAction="always" hides the 3 dots for dropdown menu items and replace those three
+     dots with the selected menu item. -->
+
+</menu>

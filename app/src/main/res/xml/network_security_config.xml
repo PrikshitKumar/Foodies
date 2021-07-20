@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- HTTPS is the secured version of HTTP. And, in our application we are fetching the
+    data from HTTP website(see the url variable). So, we have to add some additional
+    code to our app-->
+
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">13.235.250.119</domain>
+    </domain-config>
+</network-security-config>
+
+    <!-- This code allows the Domain to send the Response over HTTP -->
+
+    <!-- Now add the reference of this file in manifest File in the attribute:
+    "networkSecurityConfig" -->

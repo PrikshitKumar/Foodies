@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.History">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_txtHistory"
+        android:text="Your pervious Orders are listed below: "
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="15dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/id_txtHistory"
+        android:background="@color/background_UI"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/id_recyclerViewHistory"
+        android:layout_below="@+id/id_txtHistory"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/id_progressBarLayoutHistory"
+        android:background="@color/white"
+        >
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_progressBarHistory"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/id_NTSHistory"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:id="@+id/id_icon_Nts"
+            android:src="@drawable/icon_nts"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="240dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Nothing to Show"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_below="@+id/id_icon_Nts"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

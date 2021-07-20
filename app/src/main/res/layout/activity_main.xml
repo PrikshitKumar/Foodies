@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/id_drawerLayout"
+    tools:context=".MainActivity">
+
+    <!-- Drawer Layout is used for Navigation Drawer, when we slide left/right on to
+    the screen, the Drawer comes and goes from the Screen... OR it gives us the
+    functionality to swipe in and swipe out the Navigation Drawer. -->
+
+    <!-- Design Support Library is used to add the menu file and header file in
+    Navigation Drawer OR it support adding material design components and patterns to
+    our apps, such as navigation drawers, floating action buttons(FAB), snackbars, and
+    tabs. -->
+
+
+    <!-- A Coordinator Layout is a super-powered frame layout which is used when there
+    are multiple interactions between the Views. For Example, in our situation, we will
+    use it to manage the interactions between the navigation drawer, toolbar and the
+    frame layout. It helps in the coordinating different things. -->
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/id_coordinateLayout">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/id_toolbar"
+                android:background="@color/orange"
+                android:minHeight="?attr/actionBarSize"
+                app:layout_scrollFlags="scroll|enterAlways"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark"
+                />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <!-- Frame Layout is for reflect the Fragments for different-different screens -->
+        <FrameLayout
+            android:id="@+id/id_frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/id_navigationView"
+        app:headerLayout="@layout/navigationbar_header"
+        app:menu="@menu/navigationbar_items_list"
+        android:layout_gravity="start"
+        />
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    tools:context=".activity.Registration">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_txtRegistration"
+            android:text="@string/register_yourself"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginBottom="30dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/id_userRName"
+            android:background="@drawable/seachbar_shape"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/icon_profile"
+            android:drawablePadding="15dp"
+            android:paddingLeft="20dp"
+            android:hint="Name (min 3 characters)"
+            android:inputType="text"
+            android:layout_below="@+id/id_txtRegistration"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/id_userREmail"
+            android:background="@drawable/seachbar_shape"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/icon_email"
+            android:drawablePadding="15dp"
+            android:paddingLeft="20dp"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:layout_below="@+id/id_userRName"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/id_userRPhoneNo"
+            android:background="@drawable/seachbar_shape"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/icon_phone"
+            android:drawablePadding="15dp"
+            android:paddingLeft="20dp"
+            android:hint="Mobile Number"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:layout_below="@+id/id_userREmail"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/id_userRAddress"
+            android:background="@drawable/seachbar_shape"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/icon_location"
+            android:drawablePadding="15dp"
+            android:paddingLeft="20dp"
+            android:hint="Delivery Address"
+            android:inputType="text"
+            android:layout_below="@+id/id_userRPhoneNo"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/id_userRePassword"
+            android:background="@drawable/seachbar_shape"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/icon_lock"
+            android:drawablePadding="15dp"
+            android:paddingLeft="20dp"
+            android:hint="Password (Min 4 characters)"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:layout_below="@+id/id_userRAddress"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/id_userReConfirmPassword"
+            android:background="@drawable/seachbar_shape"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/icon_lock"
+            android:drawablePadding="15dp"
+            android:paddingLeft="20dp"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:layout_below="@+id/id_userRePassword"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_regiterationButton"
+            android:text="Register"
+            android:textColor="@color/white"
+            android:background="@color/darkOrange"
+            android:layout_marginVertical="20dp"
+            android:layout_marginHorizontal="15dp"
+            android:textSize="20sp"
+            android:layout_alignParentBottom="true"
+            />
+
+</RelativeLayout>

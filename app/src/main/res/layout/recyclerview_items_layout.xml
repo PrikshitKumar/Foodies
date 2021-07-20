@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/id_recylerView_Items_UI"
+    android:orientation="horizontal"
+    android:layout_margin="5dp"
+    android:background="@color/background_UI"
+    android:padding="5dp"
+    android:weightSum="5">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:id="@+id/id_restaurantImage"
+        android:layout_weight="1.5"
+        android:layout_margin="2dp"
+        android:src="@drawable/foodies"
+        />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_restaurantName"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/sample_restaurantName"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_perPersonPrice"
+            android:text="@string/sample_perPersonPrice"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/green"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_restaurantHeart"
+            android:src="@drawable/icon_favorite"
+            app:tint="@color/red"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_restaurantRating"
+            android:text="@string/sample_rating"
+            android:textSize="15sp"
+            android:textColor="@color/orange"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
