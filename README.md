@@ -1,5 +1,6 @@
 # Foodies
 Food ordering Android Application.
+
 In this application, user can place the order and all the data is stored to the Server. 
 Login page is also integrated in this project for security and denied the unauthorized accesses.
 In this application, user have also the option to add the restaurant to favorites and remove the restaurants from favorites.
