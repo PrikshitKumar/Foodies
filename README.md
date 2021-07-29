@@ -12,3 +12,7 @@ All the activities are taken care of properly. No one can access this applicatio
 All the features of this application are working well.
 
 Try to download the .apk file from project and use this on Android OS.
+
+
+# Demo Video Link:
+https://drive.google.com/file/d/1vrEWokvKc1iGvL-zeJLq3bhRbzpjLxO6/view?usp=sharing
